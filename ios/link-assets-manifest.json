@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "Assets/Fonts/Sans-Black.ttf",
+      "sha1": "f2ae6ca9fb646cbd0d52d7bbad3286578a5c89c5"
+    },
+    {
+      "path": "Assets/Fonts/Sans-Bold-Italic.ttf",
+      "sha1": "dbc80cda84b300870f0e2c9251a07f0f7ae2a118"
+    },
+    {
+      "path": "Assets/Fonts/Sans-Bold.ttf",
+      "sha1": "e07e7ff0ec27cb309c74e5a8df2fb9ad16288f72"
+    },
+    {
+      "path": "Assets/Fonts/Sans-Italic.ttf",
+      "sha1": "302e08fb112dd10a524f6fc4987b44b80ee6747f"
+    },
+    {
+      "path": "Assets/Fonts/Sans-Regular.ttf",
+      "sha1": "49bdf6c2dc3ca0c772da5bc3d10ff5da23badee3"
+    }
+  ]
+}
