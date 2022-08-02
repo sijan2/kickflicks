@@ -32,8 +32,8 @@
     "paths": {                                /* Specify a path mapping for module names. */
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
-      "@models/*": ["src/model/*"],
       "@constants/*": ["src/constants/*"],
+      "@mock/*": ["src/mock/*"],
       "@navigation/*": ["src/navigation/*"],
       "@screens/*": ["src/screens/*"],
       "@utils/*": ["src/utils/*"],

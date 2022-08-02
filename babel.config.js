@@ -11,7 +11,7 @@ module.exports = {
           '@assets': './src/assets',
           '@components': './src/components',
           '@constants': './src/constants',
-          '@models': './src/model',
+          '@mock': './src/mock',
           '@navigation': './src/navigation',
           '@screens': './src/screens',
           '@utils': './src/utils',
