@@ -1,4 +1,5 @@
-import customFonts from './fonts';
-import theme, {COLORS, SIZES, FONTS} from './theme';
+import Fonts from './Fonts';
+import Colors from './Colors';
+import Metrics from './Metrics';
 
-export {customFonts, theme, COLORS, SIZES, FONTS};
+export {Fonts, Colors, Metrics};
