@@ -1,5 +1,7 @@
 import React, {FC} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+
+import {NavigationContainer} from '@react-navigation/native';
+import BottomTabs from '@navigation/BottomTab/BottomTab';
 
 interface IProps {}
 
@@ -9,19 +11,11 @@ interface IProps {}
  **/
 
 const EntryNav: FC<IProps> = () => {
-  const {container} = styles;
   return (
-    <View style={container}>
-      <Text>Hello</Text>
-    </View>
+    <NavigationContainer>
+      <BottomTabs />
+    </NavigationContainer>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 export default EntryNav;
