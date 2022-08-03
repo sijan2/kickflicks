@@ -3,6 +3,7 @@ package com.kickflicks;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+
 import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
@@ -18,9 +19,9 @@ public class MainActivity extends ReactActivity {
   }
 
   /**
-   * If the activity is being restarted, do not restore the activity state, but
-   * start with a clean
-   * slate.
+   * If the activity is being re-initialized after previously being shut down then
+   * this Bundle contains
+   * the data it most recently supplied in onSaveInstanceState(Bundle)
    * 
    * @param savedInstanceState A Bundle object containing the activity's
    *                           previously saved state. If the

@@ -1,18 +1,16 @@
-import React, {FC} from 'react';
+import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-
-interface IProps {}
 
 /**
  * @author Nitesh Raj Khanal
- * @function @Standings
+ * @function @Profile
  **/
 
-const Standings: FC<IProps> = () => {
+const Profile = () => {
   const {container} = styles;
   return (
     <View style={container}>
-      <Text>Standings</Text>
+      <Text>Profile</Text>
     </View>
   );
 };
@@ -25,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Standings;
+export default Profile;

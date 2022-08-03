@@ -25,6 +25,8 @@ const type = {
   medium: 'Poppins-Medium',
   bold: 'Poppins-Bold',
   semi: 'Poppins-SemiBold',
+  regular: 'Poppins-Regular',
+  extra: 'Montserrat-Bold',
 };
 
 const Fonts = {customFonts, type};

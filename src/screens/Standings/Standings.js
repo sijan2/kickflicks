@@ -1,18 +1,16 @@
-import React, {FC} from 'react';
+import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-
-interface IProps {}
 
 /**
  * @author Nitesh Raj Khanal
- * @function @Home
+ * @function @Standings
  **/
 
-const Home: FC<IProps> = () => {
+const Standings = () => {
   const {container} = styles;
   return (
     <View style={container}>
-      <Text>Home</Text>
+      <Text>Standings</Text>
     </View>
   );
 };
@@ -24,4 +22,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
-export default Home;
+
+export default Standings;

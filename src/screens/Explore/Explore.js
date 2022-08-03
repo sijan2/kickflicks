@@ -1,18 +1,16 @@
-import React, {FC} from 'react';
+import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-
-interface IProps {}
 
 /**
  * @author Nitesh Raj Khanal
- * @function @Discover
+ * @function @Explore
  **/
 
-const Discover: FC<IProps> = () => {
+const Explore = () => {
   const {container} = styles;
   return (
     <View style={container}>
-      <Text>Discover</Text>
+      <Text>Explore</Text>
     </View>
   );
 };
@@ -24,4 +22,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
-export default Discover;
+
+export default Explore;

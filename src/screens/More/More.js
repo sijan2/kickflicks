@@ -1,18 +1,16 @@
-import React, {FC} from 'react';
+import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-
-interface IProps {}
 
 /**
  * @author Nitesh Raj Khanal
- * @function @Explore
+ * @function @More
  **/
 
-const Explore: FC<IProps> = () => {
+const More = () => {
   const {container} = styles;
   return (
     <View style={container}>
-      <Text>Explore</Text>
+      <Text>More</Text>
     </View>
   );
 };
@@ -25,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Explore;
+export default More;

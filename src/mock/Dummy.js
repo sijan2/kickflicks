@@ -90,7 +90,8 @@ export const News = [
   {
     id: '002',
     thumbnail: require('@assets/images/News3.png'),
-    title: `"CR7 is back!" - Delighted Manchester United fans react as Cristiano Ronaldo reclaims famous number 7`,
+    title:
+      '"CR7 is back!" - Delighted Manchester United fans react as Cristiano Ronaldo reclaims famous number 7',
     type: '',
     author: Authors[1],
     views: '1223',
