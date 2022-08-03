@@ -16,18 +16,19 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "kickflicks";
+    /**
+     * If the activity is being re-initialized after previously being shut down then
+     * this Bundle contains
+     * the data it most recently supplied in onSaveInstanceState(Bundle) otherwise
+     * it is null.
+     * 
+     * @param savedInstanceState A Bundle object containing the activity's
+     *                           previously saved state. If the
+     *                           activity has never existed before, the value of the
+     *                           Bundle object is null.
+     */
   }
 
-  /**
-   * If the activity is being re-initialized after previously being shut down then
-   * this Bundle contains
-   * the data it most recently supplied in onSaveInstanceState(Bundle)
-   * 
-   * @param savedInstanceState A Bundle object containing the activity's
-   *                           previously saved state. If the
-   *                           activity has never existed before, the value of the
-   *                           Bundle object is null.
-   */
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(null);
