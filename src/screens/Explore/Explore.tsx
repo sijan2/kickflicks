@@ -12,7 +12,7 @@ const Explore: FC<IProps> = () => {
   const {container} = styles;
   return (
     <View style={container}>
-      <Text>Discover</Text>
+      <Text>Explore</Text>
     </View>
   );
 };

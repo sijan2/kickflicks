@@ -12,7 +12,7 @@ const Home: FC<IProps> = () => {
   const {container} = styles;
   return (
     <View style={container}>
-      <Text>Discover</Text>
+      <Text>Home</Text>
     </View>
   );
 };
