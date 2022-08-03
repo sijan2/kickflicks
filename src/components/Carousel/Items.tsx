@@ -73,7 +73,7 @@ const Carouselitem: FC<Ilist> = ({item}) => {
 const styles = StyleSheet.create({
   cardView: {
     width: WIDTH * 0.914,
-    height: HEIGHT * 0.26,
+    height: HEIGHT * 0.255,
     backgroundColor: Colors.background,
     marginHorizontal: Metrics.marginHorizontal,
     marginVertical: WIDTH * 0.04,
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   title: {
     marginHorizontal: 10,
     marginTop: 15,
-    fontSize: Metrics.h5,
+    fontSize: Metrics.h6,
     lineHeight: 19,
     letterSpacing: 0.4,
     color: Colors.white,
