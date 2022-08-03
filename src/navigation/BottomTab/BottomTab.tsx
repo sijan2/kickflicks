@@ -1,11 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {useTheme} from 'styled-components';
-import {McVectorIcon, McTabIcon, McText} from 'Components';
-import {Images, Colors} from '@constants/Index';
-
-import {Discover, Explore, Standings, More} from 'Screens';
 import {Text, View} from 'react-native';
 
 const Tab = createBottomTabNavigator();

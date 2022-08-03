@@ -1,7 +1,6 @@
 import React, {createContext, useState, useEffect} from 'react';
-import {StatusBar} from 'react-native';
+import {StatusBar, Appearance} from 'react-native';
 import {ThemeProvider} from 'styled-components/native';
-import {Appearance, AppearanceProvider} from 'react-native-appearance';
 
 import lightTheme from './Light';
 import darkTheme from './Dark';
@@ -10,7 +9,7 @@ const defaultMode = Appearance.getColorScheme() || 'light';
 
 const ThemeContext = createContext({
   mode: defaultMode,
-  setMode: mode => console.log('Theme Color Mode =>', mode),
+  setMode: mode => console.log('Mode =>', mode),
 });
 
 const useTheme = () => React.useContext(ThemeContext);
@@ -28,7 +27,7 @@ const ManageThemeProvider = ({children}) => {
   }, []);
   return (
     <ThemeContext.Provider value={{mode: themeState, setMode}}>
-      <ThemeProvider theme={themeState === 'darks' ? darkTheme : lightTheme}>
+      <ThemeProvider theme={themeState === 'dark' ? darkTheme : lightTheme}>
         <>
           <StatusBar
             barStyle={themeState === 'light' ? 'dark-content' : 'light-content'}
@@ -40,12 +39,6 @@ const ManageThemeProvider = ({children}) => {
   );
 };
 
-const ThemeManager = ({children}) => (
-  <AppearanceProvider>
-    <ManageThemeProvider>{children}</ManageThemeProvider>
-  </AppearanceProvider>
-);
-
 export {useTheme, lightTheme, darkTheme};
 
-export default ThemeManager;
+export default ManageThemeProvider;

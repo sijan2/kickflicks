@@ -36,6 +36,7 @@
       "@mock/*": ["src/mock/*"],
       "@navigation/*": ["src/navigation/*"],
       "@screens/*": ["src/screens/*"],
+      "@themes/*":["src/themes/*"],
       "@utils/*": ["src/utils/*"],
     },                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */

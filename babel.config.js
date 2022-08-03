@@ -14,6 +14,7 @@ module.exports = {
           '@mock': './src/mock',
           '@navigation': './src/navigation',
           '@screens': './src/screens',
+          '@themes': './src/themes',
           '@utils': './src/utils',
         },
       },
