@@ -44,6 +44,8 @@ const Metrics = {
   drawerWidth: (4 / 5) * WIDTH,
   navBarHeight: Platform.OS === 'ios' ? 64 : 54,
 
+  marginHorizontal: WIDTH * 0.042,
+
   buttonRadius: 4,
 
   icons: {

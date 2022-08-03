@@ -26,7 +26,7 @@ const Colors = {
   notification: 'rgb(255, 59, 48)',
   text: 'rgb(28, 28, 30)',
 
-  linearGradient: ['', ''],
+  linearGradient: ['#4C4478', '#0C0C69'],
 
   transparent: 'rgba(0,0,0,0)',
 

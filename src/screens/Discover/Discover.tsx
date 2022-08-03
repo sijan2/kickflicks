@@ -1,5 +1,8 @@
 import React, {FC} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import CustomHeader from '../../components/CustomHeader/CustomHeader';
+import HighlightedNews from '../../components/HighlightedNews/HighlightedNews';
+import {Colors} from '../../constants/Index';
 
 interface IProps {}
 
@@ -9,19 +12,18 @@ interface IProps {}
  **/
 
 const Discover: FC<IProps> = () => {
-  const {container} = styles;
   return (
-    <View style={container}>
-      <Text>Discover Article Details</Text>
+    <View style={styles.mainContainer}>
+      <CustomHeader />
+      <HighlightedNews />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  mainContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: Colors.background,
   },
 });
 

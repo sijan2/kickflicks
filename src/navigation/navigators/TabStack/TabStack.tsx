@@ -16,7 +16,7 @@ const TabStacks = () => (
       }}
     />
     <Stack.Screen
-      name="ArticleDetail"
+      name="ArticleDetails"
       component={ArticleDetail}
       options={{
         headerShown: false,

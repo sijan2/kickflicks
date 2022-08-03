@@ -27,6 +27,7 @@ const type = {
   semi: 'Poppins-SemiBold',
   regular: 'Poppins-Regular',
   extra: 'Montserrat-Bold',
+  poppinsSemiBold: 'Poppins-SemiBold',
 };
 
 const Fonts = {customFonts, type};
