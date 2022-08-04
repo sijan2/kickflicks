@@ -6,12 +6,12 @@ export const Teams = [
   },
   {
     id: '002',
-    name: 'Arsenal',
+    name: 'Real Madrid',
     logo: require('../assets/images/Team1.png'),
   },
   {
     id: '003',
-    name: 'Real Madrid',
+    name: 'Arsenal',
     logo: require('../assets/images/Team2.png'),
   },
   {
@@ -29,32 +29,32 @@ export const Teams = [
 export const Matches = [
   {
     id: '001',
-    name: 'Strawberry Field',
+    name: 'Spotify Camp Nou',
     team1: Teams[0],
     team2: Teams[2],
   },
   {
     id: '002',
-    name: 'Autumn Field',
+    name: 'Allianz Stadium',
     team1: Teams[3],
     team2: Teams[1],
   },
   {
     id: '003',
-    name: 'Spring Field',
+    name: 'Old Trafford',
     team1: Teams[4],
     team2: Teams[0],
   },
   {
     id: '004',
-    name: 'more 1 ...',
+    name: 'Emirates Stadium',
     team1: Teams[1],
     team2: Teams[2],
   },
   {
     id: '005',
-    name: 'more 2 ...',
-    team1: Teams[3],
+    name: 'Santiago Bernabeu',
+    team1: Teams[1],
     team2: Teams[0],
   },
 ];

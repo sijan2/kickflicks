@@ -34,6 +34,8 @@ const Metrics = {
   body4: scaleFontSize(14),
   body5: scaleFontSize(13),
   body6: scaleFontSize(12),
+  body7: scaleFontSize(11),
+  body9: scaleFontSize(9),
 
   borderWidth: 0.4,
 

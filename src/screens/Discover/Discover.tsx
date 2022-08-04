@@ -3,6 +3,7 @@ import {StyleSheet, View} from 'react-native';
 import CustomHeader from '../../components/CustomHeader/CustomHeader';
 import HighlightedNews from '../../components/HighlightedNews/HighlightedNews';
 import PopularTeams from '../../components/PopularTeams/PopularTeams';
+import UpcomingMatches from '../../components/UpcomingMatches/UpcomingMatches';
 import {Colors} from '../../constants/Index';
 
 interface IProps {}
@@ -18,6 +19,7 @@ const Discover: FC<IProps> = () => {
       <CustomHeader />
       <HighlightedNews />
       <PopularTeams />
+      <UpcomingMatches />
     </View>
   );
 };
