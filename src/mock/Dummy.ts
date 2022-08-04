@@ -1,3 +1,7 @@
+import DateAndDayGenerator from '../utils/DayGen';
+
+const date = new Date();
+const dateAndDay = DateAndDayGenerator(date);
 export const Teams = [
   {
     id: '001',
@@ -32,30 +36,35 @@ export const Matches = [
     name: 'Spotify Camp Nou',
     team1: Teams[0],
     team2: Teams[2],
+    date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
   },
   {
     id: '002',
     name: 'Allianz Stadium',
     team1: Teams[3],
     team2: Teams[1],
+    date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
   },
   {
     id: '003',
     name: 'Old Trafford',
     team1: Teams[4],
     team2: Teams[0],
+    date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
   },
   {
     id: '004',
     name: 'Emirates Stadium',
     team1: Teams[1],
     team2: Teams[2],
+    date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
   },
   {
     id: '005',
     name: 'Santiago Bernabeu',
     team1: Teams[1],
     team2: Teams[0],
+    date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
   },
 ];
 

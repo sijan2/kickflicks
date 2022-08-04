@@ -4,13 +4,14 @@ import {Colors, Fonts, Metrics} from '../../constants/Index';
 import {HEIGHT, WIDTH} from '../../utils/Dimensions';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import AntDesign from 'react-native-vector-icons/AntDesign';
 interface IProps {
   name?: string;
   team1name?: string;
   team1logo?: any;
   team2name?: string;
   team2logo?: any;
+  matchDate?: string;
 }
 
 /**
@@ -24,6 +25,7 @@ const LogosContainer: FC<IProps> = ({
   team1logo,
   team2name,
   team2logo,
+  matchDate,
 }) => {
   const {
     imageContainer,
@@ -35,6 +37,8 @@ const LogosContainer: FC<IProps> = ({
     team2Image,
     teamNames,
     teamName,
+    matchDateStyle,
+    matchDateText,
   } = styles;
   return (
     <View>
@@ -60,6 +64,10 @@ const LogosContainer: FC<IProps> = ({
           <Text style={teamName}>vs</Text>
           <Text style={teamName}>{team2name}</Text>
         </View>
+        <View style={matchDateStyle}>
+          <AntDesign name="clockcircleo" size={22} color={Colors.blue} />
+          <Text style={matchDateText}>{matchDate}</Text>
+        </View>
       </TouchableOpacity>
     </View>
   );
@@ -70,7 +78,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.blue,
     borderRadius: Metrics.s10,
     width: WIDTH * 0.4,
-    height: HEIGHT * 0.22,
+    height: HEIGHT * 0.23,
     margin: 10,
     padding: 5,
   },
@@ -86,6 +94,7 @@ const styles = StyleSheet.create({
     fontSize: Metrics.body7,
     color: Colors.blue,
     fontFamily: Fonts.type.bold,
+    marginLeft: 3,
   },
   team1Image: {
     width: WIDTH * 0.13,
@@ -104,7 +113,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 10,
-    marginBottom: 3,
   },
   teamNames: {
     justifyContent: 'center',
@@ -115,6 +123,20 @@ const styles = StyleSheet.create({
     fontSize: Metrics.body5,
     color: Colors.white,
     fontFamily: Fonts.type.bold,
+  },
+  matchDateStyle: {
+    backgroundColor: Colors.white,
+    borderRadius: Metrics.s16,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: HEIGHT * 0.035,
+    flexDirection: 'row',
+  },
+  matchDateText: {
+    fontSize: Metrics.body7,
+    color: Colors.blue,
+    fontFamily: Fonts.type.bold,
+    marginLeft: 3,
   },
 });
 export default LogosContainer;
