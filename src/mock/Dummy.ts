@@ -1,18 +1,18 @@
 export const Teams = [
   {
     id: '001',
-    name: 'Real Madrid',
-    logo: require('../assets/images/Team1.png'),
+    name: 'FC Barcelona',
+    logo: require('../assets/images/Team3.png'),
   },
   {
     id: '002',
     name: 'Arsenal',
-    logo: require('../assets/images/Team2.png'),
+    logo: require('../assets/images/Team1.png'),
   },
   {
     id: '003',
-    name: 'FC Barcelona',
-    logo: require('../assets/images/Team3.png'),
+    name: 'Real Madrid',
+    logo: require('../assets/images/Team2.png'),
   },
   {
     id: '004',

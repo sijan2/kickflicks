@@ -24,7 +24,7 @@ const CustomHeader: FC<IProps> = () => {
   };
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.headerTextContainer}>
+      <View>
         <Text style={styles.headerText}>Discover</Text>
       </View>
       <View style={styles.iconContainer}>
@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
     marginHorizontal: Metrics.marginHorizontal,
     alignItems: 'center',
   },
-  headerTextContainer: {},
   headerText: {
     fontSize: Metrics.h2,
     color: Colors.white,

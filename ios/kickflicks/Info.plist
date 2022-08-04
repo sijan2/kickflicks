@@ -23,6 +23,8 @@
 		<string>Poppins-SemiBold.ttf</string>
 		<string>Inter-Regular.ttf</string>
 		<string>Montserrat-Bold.ttf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-Regular.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>

@@ -2,6 +2,8 @@ const Colors = {
   background: '#1F1D2B',
   tabBackground: '#252836',
 
+  popularTeamsBackground: '#222232',
+
   primary: '#6C5ECF',
   secondary: '#ffffff',
   accent: '#22DDF2',
