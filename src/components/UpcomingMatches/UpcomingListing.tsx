@@ -14,7 +14,6 @@ interface IProps {}
 const PopularListing: FC<IProps> = () => {
   const {container, list} = styles;
   const data = Matches;
-  console.log('Match Date =>', data);
   const ref = useRef<FlatList>(null);
   const [index] = useState(0);
   return (

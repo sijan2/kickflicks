@@ -1,7 +1,8 @@
 import React, {FC} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import CustomHeader from '../../components/CustomHeader/CustomHeader';
 import HighlightedNews from '../../components/HighlightedNews/HighlightedNews';
+import LatestNews from '../../components/LatestNews/LatestNews';
 import PopularTeams from '../../components/PopularTeams/PopularTeams';
 import UpcomingMatches from '../../components/UpcomingMatches/UpcomingMatches';
 import {Colors} from '../../constants/Index';
@@ -16,10 +17,13 @@ interface IProps {}
 const Discover: FC<IProps> = () => {
   return (
     <View style={styles.mainContainer}>
-      <CustomHeader />
-      <HighlightedNews />
-      <PopularTeams />
-      <UpcomingMatches />
+      <ScrollView>
+        <CustomHeader />
+        <HighlightedNews />
+        <PopularTeams />
+        <UpcomingMatches />
+        <LatestNews />
+      </ScrollView>
     </View>
   );
 };

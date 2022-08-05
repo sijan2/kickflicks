@@ -65,7 +65,7 @@ const LogosContainer: FC<IProps> = ({
           <Text style={teamName}>{team2name}</Text>
         </View>
         <View style={matchDateStyle}>
-          <AntDesign name="clockcircleo" size={22} color={Colors.blue} />
+          <AntDesign name="calendar" size={22} color={Colors.blue} />
           <Text style={matchDateText}>{matchDate}</Text>
         </View>
       </TouchableOpacity>
@@ -78,9 +78,10 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.blue,
     borderRadius: Metrics.s10,
     width: WIDTH * 0.4,
-    height: HEIGHT * 0.23,
+    height: HEIGHT * 0.255,
     margin: 10,
     padding: 5,
+    justifyContent: 'center',
   },
   stadiumNameContainer: {
     backgroundColor: Colors.white,
