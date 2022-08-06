@@ -21,6 +21,7 @@ import SoccerLogo from '../../assets/images/Soccer1.png';
 interface Ilist {
   id?: any;
   image?: any;
+  thumbnail?: any;
   title?: string;
   name?: string;
   date?: string;
@@ -40,6 +41,7 @@ const Carouselitem: FC<Ilist> = ({item}) => {
     return navigation.navigate('ArticleDetails', {
       id: item.id,
       image: item.image,
+      thumbnail: item.thumbnail,
       title: item.title,
       name: item.name,
       date: item.date,
@@ -59,9 +61,6 @@ const Carouselitem: FC<Ilist> = ({item}) => {
           end={{x: 1, y: 0}}
           colors={Colors.linearGradient}
           style={styles.cardView}>
-          <View style={styles.imageContainer}>
-            <Image style={styles.image} source={item.image} />
-          </View>
           <View style={styles.textView}>
             <View style={styles.footballIconContainer}>
               <Image source={SoccerLogo} style={styles.footballIcon} />
@@ -73,6 +72,9 @@ const Carouselitem: FC<Ilist> = ({item}) => {
             <View style={styles.nested}>
               <Text style={styles.text}>{item.date}</Text>
             </View>
+          </View>
+          <View style={styles.imageContainer}>
+            <Image style={styles.image} source={item.image} />
           </View>
         </LinearGradient>
       </TouchableOpacity>
@@ -128,6 +130,7 @@ const styles = StyleSheet.create({
     width: '50%',
     height: '100%',
     borderRadius: 20,
+    resizeMode: 'contain',
   },
   title: {
     marginHorizontal: 10,

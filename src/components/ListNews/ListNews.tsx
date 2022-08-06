@@ -91,7 +91,6 @@ const styles = StyleSheet.create({
   imageContainer: {
     width: WIDTH * 0.3,
     height: HEIGHT * 0.11,
-    borderRadius: Metrics.s16,
     marginRight: Metrics.s10,
   },
   imageD: {
@@ -105,7 +104,7 @@ const styles = StyleSheet.create({
   },
   newsTitleContainer: {},
   titleText: {
-    fontSize: Metrics.body6,
+    fontSize: Metrics.body5,
     fontFamily: Fonts.type.regular,
     color: Colors.white,
   },

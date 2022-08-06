@@ -26,6 +26,8 @@ interface IProps {}
 const ArticleDetail: FC<IProps> = ({route}: any) => {
   const {
     header,
+    backButton,
+    shareButton,
     headerText,
     container,
     imageContainer,
@@ -66,17 +68,26 @@ const ArticleDetail: FC<IProps> = ({route}: any) => {
   return (
     <SafeAreaView style={container}>
       <View style={header}>
-        <TouchableOpacity onPress={() => navigation.goBack()}>
+        <TouchableOpacity
+          onPress={() => navigation.goBack()}
+          style={backButton}>
           <AntDesign name="arrowleft" size={24} color={Colors.white} />
         </TouchableOpacity>
         <Text style={headerText}>Kick Flicks</Text>
-        <TouchableOpacity onPress={myCustomShare}>
+        <TouchableOpacity onPress={myCustomShare} style={shareButton}>
           <AntDesign name="sharealt" size={24} color={Colors.white} />
         </TouchableOpacity>
       </View>
       <ScrollView>
         <View style={imageContainer}>
-          <Image source={route.params.image} style={detailsImage} />
+          <Image
+            source={
+              route.params.thumbnail
+                ? route.params.thumbnail
+                : route.params.image
+            }
+            style={detailsImage}
+          />
         </View>
         <View style={newsDetails}>
           <View>
@@ -118,8 +129,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    width: WIDTH * 0.914,
-    backgroundColor: Colors.background,
+    width: WIDTH,
+    backgroundColor: Colors.popularTeamsBackground,
+  },
+  backButton: {
+    marginLeft: Metrics.marginHorizontal,
+  },
+  shareButton: {
+    marginRight: Metrics.marginHorizontal,
   },
   headerText: {
     fontSize: Metrics.h3,
@@ -133,7 +150,8 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     height: HEIGHT * 0.3,
-    width: WIDTH,
+    width: WIDTH * 0.914,
+    marginHorizontal: Metrics.marginHorizontal,
   },
   detailsImage: {
     height: '100%',

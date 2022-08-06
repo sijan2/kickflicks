@@ -22,79 +22,97 @@ export const Authors = [
 export const carouseldata = [
   {
     id: 1,
-    image: require('../assets/images/News1.png'),
-    title: 'LIVE Transfer Talk: Ronaldo pushing for Man City move',
-    name: 'Kathmandu Post',
+    image: require('../assets/images/laliga.png'),
+    thumbnail: require('../assets/images/laligaPlus.jpeg'),
+    title:
+      'LaLiga teams up with Streamline to jointly create new experience for fans in China',
     date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
     author: Authors[0],
     views: sixDigitRandomNumber(),
     likes: fourDigitRandomNumber(),
     comments: threeDigitRandomNumber(),
     type: '',
-    description:
-      '\tMinisters representing the Nepali Congress in the government have demanded resignation of Finance Minister Janardan Sharma.During a Cabinet meeting held at the Office of Prime Minister and Council of Ministers on Tuesday, the ministers urged Finance Minister Sharma to resign from his post.\n\nSharma is accused of inviting two unauthorized persons to change tax rates on the eve of the budget presentation for the next fiscal year 2022-23. \n\nThe ministers said that the Finance Minister should resign on moral grounds as questions have been raised against him in public quarters.',
+    description: `LaLiga announces a six-year strategic partnership with Beijing based Streamline Media Technology, officially launching the LaLiga live streaming application in China: LaLiga Plus.
+
+      The DTC Exclusive Brand Dedicated Application solution, LaLiga Plus will connect Chinese fans to LaLiga Santander and LaLiga Smartbank starting this season. This APP will offer different packages to the fans through a freemium model combining free and paid matches. Fans will be able to enjoy all 380 matches of LaLiga Santander and for the first time in China, all 462 matches and promotion play-offs of LaLiga Smartbank will be available to the Chinese fans as well. With this launch, LaLiga is the first among the major leagues to have a DTC solution in the country.
+      
+      "Brand Dedicated Application is the future of sports broadcasting. Technology is playing an increasingly important role in the world of sport. This is a strategic agreement and a firm commitment to innovation in a country as important to us as China", said Javier Tebas, president of LaLiga.
+      
+      Laliga has been continuously dedicated to offering an interactive viewing experience to all its fans in China. The partnership with Streamline enables LaLiga to connect with Chinese fans through a deeper and more profound relationship. By immersing fans in the LaLiga culture, which will be an all new immersive experience by integrating sport, technology and IP derivatives, targeted to build an comprehensive showcase for LaLiga delivering its full excitement and passion.
+      
+      "I couldn’t ask for a better partner, a world class sports brand like LaLiga, who shares our vision of how we believe sports will be brought to audiences in the future. LaLiga Plus will be a significant game changer in the sports entertainment industry and I am optimistic we will soon be able to announce partnerships with other major sports brands and IP’s.", said Marco Weber, Chairman, CEO and Founder of Streamline.
+      
+      The two parties will work closely on delivering a more immersive LaLiga game viewing experience to all Chinese fans.
+      
+      "LaLiga Plus is the core of our strategy in China for the next years. This is a first step of a complete ecosystem we are building to provide new and unique experiences and new products to fans. Together with Streamline, we are investing in technology, fan experience and increasing value for our brand and business", said Sergi Torrents, LaLiga’s managing director in China.`,
   },
   {
     id: 2,
-    image: require('../assets/images/News2.png'),
-    title:
-      'Tottenham: Paddy Kenny laments ‘disappointing’ Harry Kane situation',
-    name: 'Himalayan Times',
+    image: require('../assets/images/laliga.png'),
+    thumbnail: require('../assets/images/eaLaliga.jpeg'),
+    title: 'EA SPORTS FC will be the title sponsor of all LaLiga competitions',
     date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
     author: Authors[1],
     type: 'Live Transfer Talk',
     views: sixDigitRandomNumber(),
     likes: fourDigitRandomNumber(),
     comments: threeDigitRandomNumber(),
-    description:
-      '\tThe ongoing Central Working Committee meeting of the Nepali Congress, which was supposed to end today, has been extended till tomorrow after the party President Sher Bahadur Deuba called off today’s meeting.\n\nThe decision to postpone today’s meeting was taken after senior NC leader Ramchandra Paudel and leader Bijaya Kumar Gachchhadar presented their opinions. \n\nThe NC president had planned to conclude the meeting today itself after taking decisions related to poor performance of the party in elections, fixing date and place for the Maha Samiti meeting, formation of statute drafting and central election committees, and announcement of campaigns to revive the party, among others.\n\nHowever, Deuba postponed the meeting in a bid to seek consensus on the resolution to be passed by the CWC, according to NC CWC member Pradip Paudel.\n\nThe camp led by senior leader Paudel has demanded that the CWC decisions should also include annulment of parliamentary board and central work execution committee ‘formed in violation of the party statute’.Leaders representing the Paudel camp are preparing to write a note of dissent if the two bodies are not scrapped.\n\nThe Paudel faction has also demanded that the gathering of the NC district presidents be held within this month, followed by Maha Samiti next month. However, the establishment faction is planning to delay the meetings.In today’s meeting, Paudel reiterated that Deuba should take the responsibility of the humiliating loss in the elections at the hands of the left alliance of the CPN-UML and the CPN-Maoist Centre. He also attributed the election loss especially to the working style of Deuba and decisions taken by his government.\n\nPaudel also said that they were not trying to remove Deuba from leadership, but they wanted change.He also defended the letter he had written to Deuba around two months ago. In the letter, Paudel had accused Deuba of being power hungry and only working in the interest of the leaders representing his camp. However, leaders close to Deuba had slammed Paudel for the ‘type of language’ used in the letter.\n\nPaudel stood firm in his stand and asked, “How many times Ganesh Man Sing became the country’s prime minister and how many times Deuba became the PM? Whom do the people admire, Deuba or Singh?” He said he had not written the letter to make it public, but the spokesperson made it public. Similarly, Gachchhadar, who merged his erstwhile Nepal Democratic Forum with the NC just before the elections, said that he and other NDF leaders should be adjusted in the party in line with the understanding reached during the merger, according to a leader present at the meeting.',
+    description: `'Electronics Arts Inc. (NASDAQ: EA) and LaLiga, a leader in football entertainment, announced today they have entered into a one of a kind, multi-year partnership that will allow both parties to deliver groundbreaking experiences for global football fans. Starting in the 2023/2024 season, the partnership between EA SPORTS FC™ and LaLiga will include title naming rights for all LaLiga competitions, a complete rebrand of LaLiga with EA SPORTS including all logos, graphics, fonts and other visual elements, while also delivering new in-game integration, broadcast highlights, and joint commitments to supporting grassroots initiatives.
+
+      This new partnership will encompass the first and second divisions of LaLiga (Spain’s top professional football competitions), LaLiga Promises (the league’s annual youth tournament) and eLaLiga.
+      
+      “EA SPORTS FC is committed to delivering the most authentic and immersive experiences in global football. Our innovative new partnership with LaLiga further elevates that ambition and solidifies both organizations' position at the centre of football culture,” said David Jackson, VP Brand, EA SPORTS FC. “The visible reach and scale of this partnership is deeply exciting, as is the opportunity to deliver incredible experiences for fans through in-game innovation, interactive entertainment and grassroots initiatives.” 
+      
+      "EA SPORTS represents the cutting edge of interactive football experiences while LaLiga is at the forefront of actual football competitions with unmatched in-person, broadcast and digital fan experiences,” said Javier Tebas, President, LaLiga. “We have been strategic partners with EA SPORTS for years and this expanded agreement is a commitment to providing the next level of innovation to all football fans, a fusion between the virtual and real worlds of football.”
+      
+      For years, fans have been able to experience unrivaled authenticity in game, playing with their favourite LaLiga teams, players, and stadiums within EA SPORTS’ football ecosystem. With this partnership, EA SPORTS and LaLiga will deepen their collaboration. In addition to the naming rights partnership, fans will experience the benefit through technology, gameplay enhancements and development, and real-world football highlights. Both LaLiga and EA SPORTS are committed to grassroots initiatives to grow the game which will include increasing accessibility, upgrading facilities, and many more initiatives to truly immerse fans into the world of football.
+      
+      “This partnership with EA SPORTS is set to truly transform the way football is enjoyed around the world,” said Óscar Mayo, Executive Director, LaLiga. “Moreover the alliance demonstrates LaLiga is a global brand, evidence of the success of our league to connect with fans internationally.”
+      
+      “We’re thrilled to partner with a worldwide leader in football fandom to better connect our fans to their favourite clubs, players, and LaLiga competitions,” said Nick Wlodyka, SVP & GM, EA SPORTS FC. “The contributions from LaLiga to our EA SPORTS FC portfolio will be immense, not only from a visual aspect, but across technological and game development improvements, further blurring the lines between the real and virtual worlds of football.”
+      
+      More details of the partnership will be shared in the coming months, with information on EA SPORTS FC products being made available in Summer 2023.'`,
   },
   {
     id: 3,
-    image: require('../assets/images/News3.png'),
-    title: 'Luis Suarez returns to Nacional, the team where it all began',
-    name: 'Online Khabar',
+    image: require('../assets/images/arsenal.png'),
+    thumbnail: require('../assets/images/cystalarsenal.jpeg'),
+    title:
+      "Crystal Palace and Arsenal players take a knee before the Premier League season's curtain-raiser",
     date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
     author: Authors[1],
     type: 'Live Transfer Talk',
     views: sixDigitRandomNumber(),
     likes: fourDigitRandomNumber(),
     comments: threeDigitRandomNumber(),
-    description: `\tOn Sunday, when the CPN (Unified Socialist), one of the partners in the ruling coalition, suddenly decided to recall four of its ministers with a view to sending a new set of leaders to replace them, it was expected to set in motion a Cabinet reshuffle, with more changes of ministerial portfolios. However, until Sunday night, it looked like Prime Minister Sher Bahadur Deuba might not implement the Unified Socialist’s decision immediately.
-      \nOn Monday, Deuba refused to change the ministers as recommended by the Unified Socialist, in what seems to be a setback for its chair Madhav Kumar Nepal.
-      \nSources say changing some ministers from the Unified Socialist would have created pressure on Deuba for a major Cabinet reshuffle, which stopped him from implementing Nepal’s decision.
-      \nAnd there were concerns if changing ministers at a time when the budget is being discussed in Parliament could have sent a good message.
-      \nDeuba, also the Nepali Congress president, consulted CPN (Maoist Centre) chair Pushpa Kamal Dahal, Madhav Nepal and Janata Samajbadi Party chair Upendra Yadav on Monday morning.
-      \n“We suggested that the Cabinet reshuffle be stalled for now,” said Upendra Yadav, chair of Janata Samajbadi Party. “How can ministers be changed when the budget is yet to be endorsed by Parliament?”
-      \nYadav’s position against a Cabinet rejig, however, stems from pressure he is facing from some of his lawmakers for ministerial berths.
-      \nSome lawmakers had already started asking Yadav to recall the ministers and send them to the Cabinet as he had earlier told them that a new set of leaders would be made ministers “after six months.”
-      \nFormed in mid-July, Deuba had given full shape to his government three months later. Four ministers each from the Unified Socialist and Janata Samajbadi were appointed in the first week of October.
-      \n“Our chairman had told us that the existing set of ministers would be replaced after six months,” said Pradip Yadav, one of the lawmakers of the Janata Samajbadi who is aspiring for a ministerial portfolio. “We have reminded the party chair of his words. Let’s see when he decides to replace ministers.”
-      \nOn Sunday, the Unified Socialist decided to recommend Jeevan Ram Shrestha as minister for tourism, culture and civil aviation to replace Prem Ale; Metmani Chaudhary as minister for urban development to replace Ram Kumari Jhakri; Sher Bahadur Kunwar as minister for labour and employment in place of Krishna Kumar Shrestha; and Bhawani Prasad Khapung as minister for health and population to replace Birodh Khatiwada. Khapung is currently serving as state minister for health. The party also recommended Hira Chandra KC as minister of state for health and population.
-      \nThe incumbent ministers, however, complained that they were not taken into confidence before the decision was taken.
-      \n“Reshuffling the Cabinet when the ministers are discussing the budget in Parliament is unheard of anywhere in the world,” said Birodh Khatiwada, the minister for health and population, earlier in the afternoon. “I will be attending the Cabinet meeting later today.”
-      \nAfter the decision was not implemented, Khatiwada did attend the Cabinet meeting.
-      \nIt was not immediately clear why Madhav Nepal made the abrupt decision to replace his party’s ministerial line-up.
-      \nSenior leader of the party Jhalanath Khanal said the leadership should take the responsibility of implementing the party’s decisions.
-      \n“It’s a surprising act in Nepali politics. One of the coalition partners takes a decision and the coalition refuses to implement it,” Khanal told the Post. “Our leadership should take the responsibility and the decision must be implemented.”
-      \nKhanal said the issue will be raised in the party meeting.
-      \n“Our party doesn’t function along the lines of what the coalition says,” said Khanal. “Our’s is a sovereign and independent party.”
-      \nMany say Deuba may have nixed Unified Socialist’s proposal to change the ministers also to offset pressure he was feeling within his party to reshuffle the Cabinet.
-      \nNepali Congress general secretary and lawmaker Gagan Thapa said on Monday that there are demands within his party to induct new faces into the Cabinet although formal discussions are yet to happen.
-      \n“Those who have served as ministers are demanding that they be given a chance to show their performance,” Thapa, also a former minister, told reporters after the House meeting. “It’s up to the Parliamentary Party [Deuba] leader to decide as there is a short time remaining for this government to spend in office.”
-      \nThapa said lawmakers have been complaining that the same leaders are repeated every time the Congress forms the government or joins a coalition.
-      \nSome Congress leaders said it’s up to Madhav Nepal how he deals with his party members after the prime minister refused to change the ministers as recommended by him.
-      \n“It’s up to the leaders of the Unified Socialist; the Congress has nothing to comment on it,” said a senior Congress leader who wished to remain anonymous.
-      \nNow that Unified Socialist ministers have been given continuity, a dispute is set to arise in the party, and if the problem continues, it could affect the coalition. Party chair Madhav Nepal has already expressed displeasure at the coalition after the party’s poor performance in the local polls. Another party that is not happy with the local poll performance is Janata Samajbadi.
-      \nThe coalition’s fifth partner, Rastriya Janamorcha, has no share in the Deuba-led Cabinet.
-      \nAs the country prepares for general elections, due later this year, Deuba is in a bid to protect the coalition so as to keep the main opposition CPN-UML in check. He fears a possible left alliance of the UML, the Maoist Centre and Unified Socialist. The Maoist Centre, which seems happy with its poll performance, does not look too keen on joining hands with the UML.
-      \nSome say the dispute in the Unified Socialist, however, may trigger a new chain of events.
-      \nDeuba, meanwhile, is weighing various options as he intends to conduct the general elections by November-end.
-      \nAccording to coalition party leaders, Deuba and Dahal have said that the Cabinet could be reshuffled after the budget is endorsed by Parliament.
-      \nDeuba is also making attempts to rope in the Loktantrik Samajbadi Party to the government by offering deputy Speaker and at least two ministers to the party.
-      \nAccording to leaders, the ongoing meeting of the party’s Central Executive Committee is discussing whether to join the government.
-      \n“We are ready to join the government but we need at least three ministers,” said a Central Executive Committee member of the party asking not to be named. “Why would we need the deputy Speaker’s position when the House is set to complete its term?”
-      \nThe party is preparing to hand over a memorandum to the prime minister on Tuesday with a set of demands it wants to be met by the government.
-      \n“We have not received any proposal from the government yet,” said Keshav Jha, a Loktantrik Samajbadi leader. “But the prime minister seems ready to address our demands.”`,
+    description: `Crystal Palace and Arsenal players took the knee before their Premier League clash on Friday night (which the latter won 2-0) - with top flight stars deciding to perform the gesture at 'significant moments', including the start of the season.
+
+    As Sportsmail forecasted on Tuesday, the pre-match gesture will no longer take place before every game this season, but players of the Eagles and Gunners opted to show their commitment to anti-discrimination before the first match of the campaign.
+    
+    Top flight players are planning to take the knee during the opening round of fixtures which began with Palace v Arsenal, and then again on Boxing Day, the finals of the FA Cup and League Cup, the last day of the season and weeks when the No Room For Racism campaign is active in October and November. 
+    
+    
+    In a collective statement, the top-flight captains said: 'We have decided to select significant moments to take the knee during the season to highlight our unity against all forms of racism and in so doing we continue to show solidarity for a common cause.
+    
+    'We remain resolutely committed to eradicate racial prejudice, and to bring about an inclusive society with respect and equal opportunities for all.'
+    
+    Club skippers met a week ago to discuss several of issues. While a number still supported taking the knee, there were opposing views from some who felt the gesture had run its course.
+    
+    A compromise has now been found to ensure it remains part of the season but only ahead of certain matches. Having originally said they would not be taking the knee, Bournemouth players will now perform the anti-racism gesture on the days agreed.
+
+While support for equality remains as strong as ever among top-flight footballers, there was some hesitation during last week's talks to make a definitive decision on how to proceed. 
+
+The act of taking the knee before every game was first introduced in 2020 during Project Restart as a show of solidarity following the brutal murder of George Floyd by a police officer in Minneapolis.
+The gesture has continued despite criticism that the act had political connotations.
+
+Sources have indicated to Sportsmail over the summer that certain figures were keen for the gesture to be scrapped because it was proving too divisive.
+
+In confirming the news, a statement read: 'Ahead of the new season, Premier League club captains have reaffirmed their commitment to fighting racism and all forms of discrimination.
+
+'The players have decided to use specific moments during the upcoming campaign to take the knee, to amplify the message that racism has no place in football or society. 
+
+'The Premier League supports the players' decision and, alongside the clubs, will use these opportunities to elevate anti-racism messaging as part of the League's No Room for Racism Action Plan.' 
+
+    `,
   },
 ];
