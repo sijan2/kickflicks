@@ -1,6 +1,9 @@
 const Colors = {
+  containerBackgroundColor: '#2F006B',
   background: '#1F1D2B',
   tabBackground: '#252836',
+  secondaryText: '#C4C4C4',
+  popularTeamsBackground: '#222232',
 
   primary: '#6C5ECF',
   secondary: '#ffffff',
@@ -26,7 +29,7 @@ const Colors = {
   notification: 'rgb(255, 59, 48)',
   text: 'rgb(28, 28, 30)',
 
-  linearGradient: ['', ''],
+  linearGradient: ['#4C4478', '#0C0C69'],
 
   transparent: 'rgba(0,0,0,0)',
 

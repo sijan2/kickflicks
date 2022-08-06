@@ -28,12 +28,15 @@ const Metrics = {
   h4: scaleFontSize(16),
   h5: scaleFontSize(14),
   h6: scaleFontSize(13),
+  h7: scaleFontSize(12),
   body1: scaleFontSize(30),
   body2: scaleFontSize(22),
   body3: scaleFontSize(16),
   body4: scaleFontSize(14),
   body5: scaleFontSize(13),
   body6: scaleFontSize(12),
+  body7: scaleFontSize(11),
+  body9: scaleFontSize(9),
 
   borderWidth: 0.4,
 
@@ -43,6 +46,8 @@ const Metrics = {
   screenHeight: WIDTH < HEIGHT ? HEIGHT : WIDTH,
   drawerWidth: (4 / 5) * WIDTH,
   navBarHeight: Platform.OS === 'ios' ? 64 : 54,
+
+  marginHorizontal: WIDTH * 0.042,
 
   buttonRadius: 4,
 
