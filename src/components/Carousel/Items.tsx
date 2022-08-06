@@ -27,6 +27,11 @@ interface Ilist {
   description?: string;
   item?: any;
   index?: any;
+  author?: object;
+  views?: string;
+  comments?: string;
+  likes?: string;
+  type?: 'string';
 }
 
 const Carouselitem: FC<Ilist> = ({item}) => {
@@ -38,7 +43,12 @@ const Carouselitem: FC<Ilist> = ({item}) => {
       title: item.title,
       name: item.name,
       date: item.date,
-      description: item.description,
+      detail: item.description,
+      author: item.author,
+      views: item.views,
+      comments: item.comments,
+      likes: item.likes,
+      type: item.type,
     });
   };
   return (

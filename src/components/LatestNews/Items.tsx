@@ -20,7 +20,7 @@ const NewsItems: FC<IProps> = () => {
           return (
             <ListNews
               id={items.item.id}
-              thumbnail={items.item.thumbnail}
+              image={items.item.thumbnail}
               title={items.item.title}
               type={items.item.type}
               author={items.item.author}

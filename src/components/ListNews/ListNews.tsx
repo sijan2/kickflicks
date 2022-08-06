@@ -7,7 +7,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import {useNavigation} from '@react-navigation/native';
 interface IProps {
   id?: string;
-  thumbnail?: any;
+  image?: any;
   title?: string;
   type?: string;
   author?: any;
@@ -25,7 +25,7 @@ interface IProps {
 
 const ListNews: FC<IProps> = ({
   id,
-  thumbnail,
+  image,
   title,
   type,
   author,
@@ -38,7 +38,7 @@ const ListNews: FC<IProps> = ({
   const {
     container,
     imageContainer,
-    image,
+    imageD,
     newsInfo,
     titleText,
     newsDetails,
@@ -49,7 +49,7 @@ const ListNews: FC<IProps> = ({
   const handleOnPress = () => {
     return navigation.navigate('ArticleDetails', {
       id: id,
-      thumbnail: thumbnail,
+      image: image,
       title: title,
       type: type,
       author: author,
@@ -64,7 +64,7 @@ const ListNews: FC<IProps> = ({
     <TouchableOpacity onPress={handleOnPress}>
       <View style={container}>
         <View style={imageContainer}>
-          <Image source={thumbnail} style={image} />
+          <Image source={image} style={imageD} />
         </View>
         <View style={newsInfo}>
           <View style={newsTitleContainer}>
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     borderRadius: Metrics.s16,
     marginRight: Metrics.s10,
   },
-  image: {
+  imageD: {
     width: '100%',
     height: '100%',
     resizeMode: 'contain',
@@ -107,6 +107,7 @@ const styles = StyleSheet.create({
   titleText: {
     fontSize: Metrics.body6,
     fontFamily: Fonts.type.regular,
+    color: Colors.white,
   },
   newsDetails: {
     flexDirection: 'row',

@@ -1,7 +1,8 @@
 const Colors = {
+  containerBackgroundColor: '#2F006B',
   background: '#1F1D2B',
   tabBackground: '#252836',
-
+  secondaryText: '#C4C4C4',
   popularTeamsBackground: '#222232',
 
   primary: '#6C5ECF',
