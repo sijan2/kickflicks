@@ -1,5 +1,5 @@
 import DateAndDayGenerator from '../utils/DayGen';
-
+import timeGenerator from '../utils/timeGenerator';
 const date = new Date();
 const dateAndDay = DateAndDayGenerator(date);
 export const Teams = [
@@ -37,6 +37,7 @@ export const Matches = [
     team1: Teams[0],
     team2: Teams[2],
     date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
+    time: timeGenerator(),
   },
   {
     id: '002',
@@ -44,6 +45,7 @@ export const Matches = [
     team1: Teams[3],
     team2: Teams[1],
     date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
+    time: timeGenerator(),
   },
   {
     id: '003',
@@ -51,6 +53,7 @@ export const Matches = [
     team1: Teams[4],
     team2: Teams[0],
     date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
+    time: timeGenerator(),
   },
   {
     id: '004',
@@ -58,6 +61,7 @@ export const Matches = [
     team1: Teams[1],
     team2: Teams[2],
     date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
+    time: timeGenerator(),
   },
   {
     id: '005',
@@ -65,6 +69,7 @@ export const Matches = [
     team1: Teams[1],
     team2: Teams[0],
     date: `${dateAndDay.month} ${dateAndDay.date}, ${dateAndDay.year}`,
+    time: timeGenerator(),
   },
 ];
 

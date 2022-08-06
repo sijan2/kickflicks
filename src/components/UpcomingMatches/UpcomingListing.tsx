@@ -32,12 +32,11 @@ const PopularListing: FC<IProps> = () => {
           renderItem={({item}) => {
             return (
               <LogosContainer
-                name={item.name}
                 team1name={item.team1.name}
                 team1logo={item.team1.logo}
                 team2name={item.team2.name}
                 team2logo={item.team2.logo}
-                matchDate={item.date}
+                matchTime={item.time}
               />
             );
           }}

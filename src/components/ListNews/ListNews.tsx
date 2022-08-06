@@ -117,6 +117,7 @@ const styles = StyleSheet.create({
   commentsText: {
     marginLeft: Metrics.s10,
     fontSize: Metrics.body5,
+    color: Colors.white,
   },
 });
 
