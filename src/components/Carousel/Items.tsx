@@ -67,7 +67,9 @@ const Carouselitem: FC<Ilist> = ({item}) => {
               <Image source={SoccerLogo} style={styles.footballIcon} />
               <Text style={styles.footballText}>Football</Text>
             </View>
-            <ScrollView>
+            <ScrollView
+              showsVerticalScrollIndicator={false}
+              showsHorizontalScrollIndicator={false}>
               <Text
                 style={[
                   styles.title,

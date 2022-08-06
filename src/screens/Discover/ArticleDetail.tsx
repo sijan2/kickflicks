@@ -78,7 +78,9 @@ const ArticleDetail: FC<IProps> = ({route}: any) => {
           <AntDesign name="sharealt" size={24} color={Colors.white} />
         </TouchableOpacity>
       </View>
-      <ScrollView>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}>
         <View style={imageContainer}>
           <Image
             source={

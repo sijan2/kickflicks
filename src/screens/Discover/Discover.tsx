@@ -17,7 +17,9 @@ interface IProps {}
 const Discover: FC<IProps> = () => {
   return (
     <View style={styles.mainContainer}>
-      <ScrollView>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}>
         <CustomHeader />
         <HighlightedNews />
         <PopularTeams />

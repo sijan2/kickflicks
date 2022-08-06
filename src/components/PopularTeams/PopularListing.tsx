@@ -18,7 +18,10 @@ const PopularListing: FC<IProps> = () => {
   const [index] = useState(0);
   return (
     <View style={container}>
-      <ScrollView style={list}>
+      <ScrollView
+        style={list}
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}>
         <FlatList
           ref={ref}
           data={data}
