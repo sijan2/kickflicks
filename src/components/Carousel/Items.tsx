@@ -13,6 +13,7 @@ import {Metrics} from '../../constants/Index';
 import {HEIGHT, WIDTH} from '../../utils/Dimensions';
 import LinearGradient from 'react-native-linear-gradient';
 import SoccerLogo from '../../assets/images/Soccer1.png';
+import {titleCharactersCounter} from '../../utils/titlewordsCounter';
 /**
  * @author Nitesh Raj Khanal
  * @function @Items
@@ -67,7 +68,18 @@ const Carouselitem: FC<Ilist> = ({item}) => {
               <Text style={styles.footballText}>Football</Text>
             </View>
             <ScrollView>
-              <Text style={styles.title}>{item.title}</Text>
+              <Text
+                style={[
+                  styles.title,
+                  {
+                    fontSize:
+                      titleCharactersCounter(item.title) > 90
+                        ? Metrics.h7
+                        : Metrics.h6,
+                  },
+                ]}>
+                {item.title}
+              </Text>
             </ScrollView>
             <View style={styles.nested}>
               <Text style={styles.text}>{item.date}</Text>
@@ -135,7 +147,6 @@ const styles = StyleSheet.create({
   title: {
     marginHorizontal: 10,
     marginTop: 15,
-    fontSize: Metrics.h6,
     lineHeight: 19,
     letterSpacing: 0.4,
     color: Colors.white,

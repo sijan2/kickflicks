@@ -7,18 +7,22 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import FeatherIcons from 'react-native-vector-icons/Feather';
 import {Colors, Fonts} from '../../../constants/Index';
-import {StyleSheet, Text} from 'react-native';
+import {StyleSheet, Text, View, Platform} from 'react-native';
+import {HEIGHT} from '../../../utils/Dimensions';
 
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
-  const {labelStyle} = styles;
+  const {labelStyle, tabStyle} = styles;
   return (
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
+        tabBarShowLabel: false,
         tabBarStyle: {
+          position: 'absolute',
           backgroundColor: Colors.tabBackground,
+          height: HEIGHT * 0.083,
         },
       }}>
       <Tab.Screen
@@ -26,20 +30,20 @@ const Tabs = () => {
         component={Discover}
         options={{
           tabBarIcon: ({focused}) => (
-            <AntDesign
-              name="home"
-              color={focused ? Colors.primary : Colors.grey0}
-              size={25}
-            />
-          ),
-          tabBarLabel: ({focused}) => (
-            <Text
-              style={[
-                labelStyle,
-                {color: focused ? Colors.primary : Colors.grey0},
-              ]}>
-              Discover
-            </Text>
+            <View style={tabStyle}>
+              <AntDesign
+                name="home"
+                color={focused ? Colors.primary : Colors.grey0}
+                size={25}
+              />
+              <Text
+                style={[
+                  labelStyle,
+                  {color: focused ? Colors.primary : Colors.grey0},
+                ]}>
+                Discover
+              </Text>
+            </View>
           ),
         }}
       />
@@ -48,20 +52,20 @@ const Tabs = () => {
         component={Explore}
         options={{
           tabBarIcon: ({focused}) => (
-            <MaterialIcons
-              name="explore"
-              color={focused ? Colors.primary : Colors.grey0}
-              size={25}
-            />
-          ),
-          tabBarLabel: ({focused}) => (
-            <Text
-              style={[
-                labelStyle,
-                {color: focused ? Colors.primary : Colors.grey0},
-              ]}>
-              Explore
-            </Text>
+            <View style={tabStyle}>
+              <MaterialIcons
+                name="explore"
+                color={focused ? Colors.primary : Colors.grey0}
+                size={25}
+              />
+              <Text
+                style={[
+                  labelStyle,
+                  {color: focused ? Colors.primary : Colors.grey0},
+                ]}>
+                Explore
+              </Text>
+            </View>
           ),
         }}
       />
@@ -70,20 +74,20 @@ const Tabs = () => {
         component={Standings}
         options={{
           tabBarIcon: ({focused}) => (
-            <FeatherIcons
-              name="bar-chart-2"
-              color={focused ? Colors.primary : Colors.grey0}
-              size={25}
-            />
-          ),
-          tabBarLabel: ({focused}) => (
-            <Text
-              style={[
-                labelStyle,
-                {color: focused ? Colors.primary : Colors.grey0},
-              ]}>
-              Standings
-            </Text>
+            <View style={tabStyle}>
+              <FeatherIcons
+                name="bar-chart-2"
+                color={focused ? Colors.primary : Colors.grey0}
+                size={25}
+              />
+              <Text
+                style={[
+                  labelStyle,
+                  {color: focused ? Colors.primary : Colors.grey0},
+                ]}>
+                Standings
+              </Text>
+            </View>
           ),
         }}
       />
@@ -92,20 +96,20 @@ const Tabs = () => {
         component={More}
         options={{
           tabBarIcon: ({focused}) => (
-            <FeatherIcons
-              name="more-horizontal"
-              color={focused ? Colors.primary : Colors.grey0}
-              size={25}
-            />
-          ),
-          tabBarLabel: ({focused}) => (
-            <Text
-              style={[
-                labelStyle,
-                {color: focused ? Colors.primary : Colors.grey0},
-              ]}>
-              More
-            </Text>
+            <View style={tabStyle}>
+              <FeatherIcons
+                name="more-horizontal"
+                color={focused ? Colors.primary : Colors.grey0}
+                size={25}
+              />
+              <Text
+                style={[
+                  labelStyle,
+                  {color: focused ? Colors.primary : Colors.grey0},
+                ]}>
+                More
+              </Text>
+            </View>
           ),
         }}
       />
@@ -117,6 +121,11 @@ const styles = StyleSheet.create({
   labelStyle: {
     fontSize: 12,
     fontFamily: Fonts.type.regular,
+  },
+  tabStyle: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: Platform.OS === 'ios' ? 15 : 0,
   },
 });
 export default Tabs;

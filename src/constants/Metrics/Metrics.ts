@@ -28,6 +28,7 @@ const Metrics = {
   h4: scaleFontSize(16),
   h5: scaleFontSize(14),
   h6: scaleFontSize(13),
+  h7: scaleFontSize(12),
   body1: scaleFontSize(30),
   body2: scaleFontSize(22),
   body3: scaleFontSize(16),

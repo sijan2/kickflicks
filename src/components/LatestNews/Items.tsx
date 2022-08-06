@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import {View, StyleSheet, FlatList} from 'react-native';
 import {News} from '../../mock/Dummy';
+import {HEIGHT} from '../../utils/Dimensions';
 import ListNews from '../ListNews/ListNews';
 interface IProps {}
 
@@ -10,12 +11,13 @@ interface IProps {}
  **/
 
 const NewsItems: FC<IProps> = () => {
-  const {container} = styles;
+  const {container, listContainer} = styles;
   return (
     <View style={container}>
       <FlatList
         data={News}
         keyExtractor={(items, index) => 'key' + index}
+        contentContainerStyle={listContainer}
         renderItem={items => {
           return (
             <ListNews
@@ -42,6 +44,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  listContainer: {
+    paddingBottom: HEIGHT * 0.084,
   },
 });
 
