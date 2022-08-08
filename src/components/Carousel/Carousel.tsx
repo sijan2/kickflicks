@@ -1,5 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
+import React, {createRef} from 'react';
 import {StyleSheet, View, FlatList, Animated, SafeAreaView} from 'react-native';
 import Carouselitem from './Items';
 import {Colors} from '../../constants/Index';
@@ -10,12 +10,13 @@ import {HEIGHT, WIDTH} from '../../utils/Dimensions';
  * @function @Carousel
  **/
 
-function infiniteScroll(this: any, dataList: any) {
+const flatlistRef = createRef<FlatList>();
+function infiniteScroll(dataList: any) {
   let numberOfData = dataList.length;
   let scrollValue = 1,
     scrolled = 0;
 
-  setInterval(function (this: any) {
+  setInterval(() => {
     scrolled++;
     if (scrolled < numberOfData) {
       scrollValue = scrollValue + WIDTH;
@@ -23,11 +24,12 @@ function infiniteScroll(this: any, dataList: any) {
       scrollValue = 1;
       scrolled = 0;
     }
-    this.flatlist?.scrollToOffset({offset: scrollValue, animated: true});
-  }, 3000);
+    flatlistRef.current?.scrollToOffset({offset: scrollValue, animated: true});
+  }, 4000);
 }
 
 const Carousel = ({data}: any) => {
+  // const ref = createRef<FlatList>();
   const scrollX = new Animated.Value(0);
   let position = Animated.divide(scrollX, WIDTH);
 
@@ -44,16 +46,14 @@ const Carousel = ({data}: any) => {
         <SafeAreaView>
           <FlatList
             data={data}
-            ref={flatlist => {
-              this.flatlist = flatlist;
-            }}
+            ref={flatlistRef}
             keyExtractor={(item, index) => 'key' + index}
             horizontal
             pagingEnabled
             scrollEnabled
             showsHorizontalScrollIndicator={false}
             snapToInterval={WIDTH}
-            scrollEventThrottle={16}
+            scrollEventThrottle={10}
             decelerationRate={'fast'}
             renderItem={({item}) => {
               return <Carouselitem item={item} />;
