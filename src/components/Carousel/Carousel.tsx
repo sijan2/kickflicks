@@ -52,15 +52,16 @@ const Carousel = ({data}: any) => {
             pagingEnabled
             scrollEnabled
             showsHorizontalScrollIndicator={false}
-            snapToAlignment="center"
+            snapToInterval={WIDTH}
             scrollEventThrottle={16}
             decelerationRate={'fast'}
             renderItem={({item}) => {
               return <Carouselitem item={item} />;
             }}
-            onScroll={Animated.event([
-              {nativeEvent: {contentOffset: {x: scrollX}}},
-            ])}
+            onScroll={Animated.event(
+              [{nativeEvent: {contentOffset: {x: scrollX}}}],
+              {useNativeDriver: false},
+            )}
           />
           <View style={styles.bar}>
             {data.map((_: any, i: any) => {
