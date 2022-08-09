@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {ScrollView, StyleSheet, View} from 'react-native';
+import {FlatList, ScrollView, StyleSheet, View} from 'react-native';
 import CustomHeader from '../../components/CustomHeader/CustomHeader';
 import HighlightedNews from '../../components/HighlightedNews/HighlightedNews';
 import LatestNews from '../../components/LatestNews/LatestNews';
@@ -15,17 +15,26 @@ interface IProps {}
  **/
 
 const Discover: FC<IProps> = () => {
+  const emptyData: any = [];
+  const renderNullItem: any = () => null;
+
+  const ListComponent = (
+    <>
+      <CustomHeader />
+      <HighlightedNews />
+      <PopularTeams />
+      <UpcomingMatches />
+      <LatestNews />
+    </>
+  );
+
   return (
     <View style={styles.mainContainer}>
-      <ScrollView
-        showsVerticalScrollIndicator={false}
-        showsHorizontalScrollIndicator={false}>
-        <CustomHeader />
-        <HighlightedNews />
-        <PopularTeams />
-        <UpcomingMatches />
-        <LatestNews />
-      </ScrollView>
+      <FlatList
+        data={emptyData}
+        renderItem={renderNullItem}
+        ListFooterComponent={ListComponent}
+      />
     </View>
   );
 };
