@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {FlatList, ScrollView, StyleSheet, View} from 'react-native';
+import {FlatList, StyleSheet, View} from 'react-native';
 import CustomHeader from '../../components/CustomHeader/CustomHeader';
 import HighlightedNews from '../../components/HighlightedNews/HighlightedNews';
 import LatestNews from '../../components/LatestNews/LatestNews';

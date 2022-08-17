@@ -98,10 +98,10 @@ const ArticleDetail: FC<IProps> = ({route}: any) => {
           <View style={miscInfo}>
             <View style={authorInfo}>
               <View style={imageContainers}>
-                <Image source={route.params.author.avatar} style={imageStyle} />
+                {/* <Image source={route.params.author.avatar} style={imageStyle} /> */}
               </View>
               <View style={authorNameContainer}>
-                <Text style={authorName}>{route.params.author.name}</Text>
+                {/* <Text style={authorName}>{route.params.author.name}</Text> */}
                 <Text style={publishDate}>{route.params.date}</Text>
               </View>
             </View>
